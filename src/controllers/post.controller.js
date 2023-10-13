@@ -1,6 +1,6 @@
 const catchAsync = require('../utils/catchAsync');
 const { db } = require('./../database/config'); // esto es para la consulta SQL
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 const { Post, postStatus } = require('../models/post.model');
 const User = require('../models/user.model');
 const Comment = require('../models/comment.model');

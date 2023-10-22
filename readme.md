@@ -2,82 +2,81 @@
 <img src="./public/img/presentation.jpg" width="400" alt="Nest Logo" />
 </p>
 
-# Proyecto - 03 Blog Api - App
+# Project - 03 Blog Api - App
 
+## Project Description
 
-## Description del Proyecto
+This project is an API for a blog, which will allow users to register, start a section, upload a post, comment on a post, view a post, upload images, and go to the user profile. The application is built using node.js express.js and uses PostgresSQL as a database to store the information.
 
-este proyecto es una api de un blog, que permitira a los usuarios, registrase, iniciar seccion, subir post, comentar post, ver post, se podra subir imagenes, ir al perfinl de usuario. la aplicacion esta construida utilizandoo node.js express.js y utuliza como base de datos PostgresSQL para almacenar la informacion
+[Here you will find the API documentation, click here to use it in your projects](https://documenter.getpostman.com/view/28473907/2s9YRCVWQY)
 
+## Main characters
 
-## Caracteres principales
+1. create post
 
-1. crear post 
+2. upload images
 
-2. subir imagenes 
+3. register user
 
-3. registrar usuario
+4. log in with a user
 
-4. loguearse con un usuario
+5. uses websockets so that when a post is created, that post is issued to all clients
 
-5. utiliza websockets para cuando se cree un post, se emita ese post a todos los clientes
+6. comment Post
 
-6. comentar Post
+7. delete Post
 
-7. eliminar Post
+8. Update Post
 
-8. Actualizar Post 
+# Used technology
 
+1. express: a minimalist node.js framework that makes it easy to create web applications and APIs.
 
+2. express-rate-limit: is a middleware used to limit repeated requests to public APIs and/or endpoints such as authentication and password reset.
 
-# Tecnologias Utilizadas
+3. express-validator: It is a data validation middleware for Express. Provides validation and sanitization of input data.
 
-1. express: un framework minimalista de node.js que facilita la creacion de aplicaciones web y APIs.
+4. helmet - is a security middleware that helps protect Express/Connect applications from some of the known web vulnerabilities by setting appropriate HTTP headers.
 
-2. express-rate-limit: es un middleware que se utiliza para limitar las solicitudes repetidas a APIs públicas y / o puntos finales como la autenticación y el restablecimiento de contraseñas.
+5. postgreSQL: is an open source, object-oriented relational database management system.
 
-3. express-validator: es un middleware de validación de datos para Express. Proporciona validación y saneamiento de datos de entrada.
+6. firebase: A web and mobile application development platform that provides real-time databases and authentication services to allow developers to create applications.
 
-4. helmet: es un middleware de seguridad que ayuda a proteger las aplicaciones Express / Connect de algunas de las vulnerabilidades conocidas de la web mediante la configuración de encabezados HTTP adecuados.
+7. sequelize: An ORM (Object Relational Mapper) for SQL databases. which simplifies working with SQL databases by writing JavaScript code instead of SQL.
 
-5. postgreSQL: es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
+8. jsonwebtoken – is a JSON Web Tokens (JWT) implementation for Node.js that allows the creation and verification of JWT tokens.
 
-6. firebase: Una plataforma de desarrollo de aplicaciones móviles y web que proporciona bases de datos en tiempo real y servicios de autenticación para permitir a los desarrolladores crear aplicaciones.
+9. socket.io – is a JavaScript library for real-time web applications. It allows real-time bidirectional communication between clients and web servers.
 
-7. sequelize: Un ORM (Object Relational Mapper) para bases de datos SQL. que simplifica el trabajo con bases de datos SQL escribiendo código JavaScript en lugar de SQL.
+## Prerequisites for using the project
 
-8. jsonwebtoken: es una implementación de JSON Web Tokens (JWT) para Node.js que permite la creación y verificación de tokens JWT.
+1. have node.js installed
 
-9. socket.io: es una biblioteca de JavaScript para aplicaciones web en tiempo real. Permite la comunicación bidireccional en tiempo real entre clientes y servidores web.
+2. have postgresSQL installed
 
+3. have a database created in postgresSQL
 
-## Requisitos previos para la utilizacion del proyecto
+## How to execute the project
 
-1. tener instalado node.js
+1. clone the repository
 
-2. tener instalado postgresSQL
+2. run the following command to install the dependencies:
 
-3. tener creada una base de datos en postgresSQL
-
-
-## Como ejecutar el proyecto
-
-1. clonar el repositorio
-
-2. ejecutar el siguiente comando para instalar las dependencias:
 ```
 
   npm install
 
 ```
 
-3. crear una base de datos local en postgresSQL
+3. create a local database in postgresSQL
 
-4. crearse una app en firebase e inicializar el firestore en ella
+4. Create an app in Firebase and initialize the Firestore in it
 
-5. clonar el .env.template y renombrarlo a .env y llenar las variables de entorno
+5. clone the .env.template and rename it to .env and fill the environment variables
 
-6. levantar el modo desarrollo con el siguiente comando:
+6. Wake up development mode with the following command:
+
 ```
 
   npm run start:dev
+```

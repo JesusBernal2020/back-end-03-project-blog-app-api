@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+const { Sequelize } = require('sequelize');
 
 const db = new Sequelize({
   dialect: process.env.DB_DIALECT,
